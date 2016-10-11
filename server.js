@@ -47,7 +47,8 @@ io.on('connection', function (socket) {
         var data = {
           name: name,
           text: text
-        };
+    };
+
 
         broadcast('message', data);
         messages.push(data);
